@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskMeGuru</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        body{
+            font-family: "Poppins", sans-serif;
+        }
+        header{
+            font-family: sans-serif;
+            font-size: 14px;
+           position: sticky;
+           top: 0px;
+            height: 100px;
+            background-color: white;
+            z-index: 2;
+            
+        
+        }
+        .logoimg{
+            padding-left: 150px;
+            padding-top: 10px;        
+        }
+        .hm-nav span{
+            padding:7px;
+        }
+        .hm-nav{
+            margin-right: 180px;
+        }
+        .headbg{
+            background-image: url(./images/headerimg.jpg);
+             background-size: cover;
+              background-repeat: none; 
+              background-position: center;
+              z-index: 0;
+              position: relative;
+              background-color: rgba(0, 0, 0, 0.65);
+        }
+
+        .headbg::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 0;
+            background-color: rgba(0, 0, 0, 0.65);
+            
+        }
+        .text-container{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                color: white; /* White text */
+                z-index: 1; /* Ensure the text is on top of the background */
+        }
+        .heading{
+            margin-right: 700px;
+            width: 300px;
+            
+            font-size: 40px;
+            font-weight: bold;
+            
+            
+        }
+        
+        .home{
+            width: 200px;
+           
+        }
+        .home span{
+            padding: 2px;
+        }
+        .bi-house{
+            color: red;
+        }
+        .hmhover:hover{
+            color: red;
+        }
+
+        .content{
+            text-align: justify;
+            line-height: 1.9;
+            margin-right: 100px;
+            word-spacing: 5px;
+            margin-top: 150px;
+            font-weight: 200;
+             
+        }
+        .content p{
+            color: grey;
+        }
+        section{
+            height: 1000px;
+        }
+        .secimg1{
+            margin-left: 120px;
+            
+        }
+        .sechead{
+            font-weight: bold;
+            font-size: 45px;
+            margin-bottom: 50px;
+
+        }
+        .customers{
+            height: 280px;
+            background-image: url(./images/fanfact.jpg);
+             background-size:220%;
+              background-repeat: none; 
+              background-position: center;
+              color: white;
+        }   
+        
+        .customers h1{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .c1{
+            font-size: 25px;
+            transition: transform 0.3s ease;
+        }
+        .c1:hover{
+            transform: translateX(-20px);
+            color: rgb(0, 255, 255);
+        }
+         .c2:hover{
+            text-shadow: 3px 1px 10px rgba(228, 228, 228, 1);
+            color: rgb(20, 251, 247);
+        }
+        
+        footer{
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .carousel{
+            max-width: 1200px; 
+            width: 100%;
+            margin-top: 50px;
+        }
+        .lastimg{
+            margin-left: -22px;
+        }
+        .lpara{
+            margin-top: 20px;
+        }
+        .fcities{
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+       
+        .listhead{
+            margin-bottom: 30px;
+        }
+        .bi-caret-right-fill{
+            color: red;
+            font-size: 14px;
+            
+        }
+        .ask1{
+            margin-left: 120px;
+        }
+        .news{
+            margin-right: 100px;
+        }
+        .form1{
+            background-color: rgb(233, 231, 231);
+        }
+        .btn1:hover{
+            background-color: black;
+        }
+        .l1:hover{
+            color: red;
+        }
+        .social span{
+            padding: 10px;
+            font-size: 30px;
+
+        }
+        .bi-facebook{
+            color: blue;
+        }
+        .bi-twitter{
+            color: rgb(117, 157, 239);
+        }
+        .bi-linkedin{
+            color: rgb(37, 131, 255);
+        }
+       
+        
+    </style>
+</head>
+<body class="container-fluid">
+    <header class="fw-bold d-flex justify-content-between align-items-center ">
+        <div class="logoimg">
+            <img src="./images/askmegurulogo.jpg" alt="" width="220px">
+        </div>
+         
+        <div class="hm-nav">
+            <span>Home</span>
+            <span>About Us</span>
+            <span>Services <span class="bi bi-caret-down-fill"></span></span>
+            <span>Contact</span>
+            <span>Login</span>
+        </div>
+    </header>
+
+
+    <div class=" headbg" style="height:200px;">
+       <div class="text-container d-flex align-items-center">
+            <div class="heading">Who We Are</div>
+            <div class="home"><span class="bi bi-house"></span> <span class="hmhover">Home</span> <span class="bi bi-caret-right-fill"></span>
+            </span> <span>About Us</span>
+            </div>
+       </div>
+    </div>
+
+
+    <section class="d-flex flex-row justify-content-around align-items-center ">
+        <div class="secimg1">
+            <img src="./images/sectionimg.png" alt="">
+        </div>
+
+        <div class=" content d-flex flex-column" style="width: 580px;">
+            <div>
+                <h1 class="sechead">Leading Software <br> Development Company In <br> Hyderabad, India.</h1>
+            </div>
+
+            <p>
+                ASKMEGURU TECHNOLOGIES is the leading digital platform for all business firms across the world and an one stop automated solution for your trade and industry. ASKMEGURU TECHNOLOGIES began its business operation in bulk SMS and Digital Marketing solutions providing company in December 2013. On the public interest we have done our platform into all over Telangana state focusing exclusively in high quality and cost-effective software development and implementation of services. We are advancing on a tremendous pace and with involvement of 15 + skilled and experienced people working in the organization. Depending on the size and field of your organization, we have different products and services to meet your requirements. We provide the optimum and customized solutions made for your organization. ASKMEGURU is a leading provider of white label search & monetization solutions. We serve a network of more than 100 web publishers globally. Offering core search solutions as a proven means to monetize audience via a search based advertising revenue stream.
+            </p>
+        </div>
+    </section>
+
+
+    <div class="customers d-flex justify-content-around align-items-center">
+        <div>
+            <h1 class="c2">600+</h1>
+            <div class="c1">Happy Customers</div>
+        </div>
+        <div>
+            <h1 class="c2">100%</h1>
+            <div class="c1">Satisfied Customers</div>
+        </div>
+        <div>
+            <h1 class="c2">350+</h1>
+            <div class="c1">Total Projects</div>
+        </div>
+        <div>
+            <h1 class="c2">7+</h1>
+            <div class="c1">Years Of Exp.</div>
+        </div>
+    </div>
+
+
+
+  <footer class="">
+        <div class=" client d-flex flex-column justify-content-center align-items-center">
+            <span class="h1">Our <strong>Clients</strong> </span>
+            <span>Some of our clients taken software solution from us</span>
+            <span class=" pt-2 bi bi-grip-horizontal"></span>
+        </div>
+
+
+        <div class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                   <div class="d-flex justify-content-around">
+                    <img  src="./images/5.png" alt="" height="100px" width="150px" class="d-block">
+                    <img src="./images/6.png" alt="" height="100px" width="150px" class="d-block">
+                    <img src="./images/7.png" alt=""  height="100px" width="150px" class="d-block">
+                    <img src="./images/20.png" alt=""  height="100px" width="150px" class="d-block">
+                   </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div class="d-flex justify-content-around">
+                        <img  src="./images/8.png" alt="" height="100px" width="150px" class="  d-block">
+                        <img src="./images/9.png" alt="" height="100px" width="150px" class="  d-block">
+                        <img src="./images/10.png" alt="" height="100px" width="150px" class="  d-block">
+                        <img src="./images/23.png" alt="" height="100px" width="150px" class="  d-block">
+                       </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div class="d-flex justify-content-around">
+                        <img  src="./images/11.png" alt="" height="100px" width="150px" class="  d-block">
+                        <img src="./images/12.png" alt="" height="100px" width="150px" class="  d-block">
+                        <img src="./images/13.png" alt="" height="100px" width="150px" class="  d-block">
+                        <img src="./images/25.png" alt="" height="100px" width="150px" class="  d-block">
+                       </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div class="d-flex justify-content-around">
+                        <img  src="./images/14.png" alt="" height="100px" width="150px" class="  d-block">
+                        <img src="./images/15.png" alt="" height="100px" width="150px" class="  d-block">
+                        <img src="./images/16.png" alt="" height="100px" width="150px" class="  d-block">
+                        <img src="./images/31.png" alt="" height="100px" width="150px" class="  d-block">
+                       </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div class="d-flex justify-content-around">
+                        <img  src="./images/17.png" alt="" height="100px" width="150px" class=" d-block">
+                        <img src="./images/18.png" alt="" height="100px" width="150px" class="  d-block">
+                        <img src="./images/19.png" alt="" height="100px" width="150px" class="  d-block">
+                        <img src="./images/35.png" alt="" height="100px" width="150px" class="  d-block">
+                       </div>
+                </div>
+            </div>
+        </div>
+  </footer>
+
+
+  <div class="lastdiv d-flex justify-content-around align-items-center " style="height: 250px;">
+    <div class=" ask1 d-flex flex-column  ">
+        <img class="lastimg" src="./images/askmegurulogo.jpg" width="250px" height="70px" alt="">
+        <span class="lpara">Software constraints are only confining if you use <br> them for what they're intended to be used for.</span>
+    </div>
+
+    <div class=" fhead d-flex flex-column ">
+        <span class="fcities">Featured Cities</span>
+        <div class="listhead d-flex justify-content-between " style="list-style: none; width: 300px;">
+            
+                <div>
+                    <li class="l1"> <span class="bi bi-caret-right-fill"></span>Home</li>
+                    <li class="l1"> <span class="bi bi-caret-right-fill"></span>Contact Us</li>
+                </div>
+                <div>
+                    <li class="l1"> <span class="bi bi-caret-right-fill"></span>About Us</li>
+                    <li class="l1"> <span class="bi bi-caret-right-fill"></span>Privacy Policy</li>
+                </div>
+        </div>
+    </div>
+        
+
+    <div style="width: 380px;height: 150px;" class=" news ">
+        <span style="font-size: 20px; font-weight: bold; margin-top: -10px;">Our Newsletter</span>
+        <input class=" form1 form-control rounded-5" type="text" placeholder="Enter Your Email Address" style="text-align: center; margin-top: 10px; margin-bottom: 10px;">
+        <button class=" btn1 btn btn-danger rounded-5" style="width: 380px;">SUBSCRIBE NOW</button>
+    </div>
+</div>
+
+<div class="social d-flex justify-content-center align-items-center p-4">
+    <span class="bi bi-facebook"></span>
+    <span class="bi bi-twitter"></span>
+    <span class="bi bi-linkedin"></span>
+</div>
+<div style="text-align: center;height: 50px;">
+    <span>© Copyright 2020 Askmeguru Technologies. All Rights Reserved</span>
+</div>
+
+
+</body>
+</html>
